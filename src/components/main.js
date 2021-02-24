@@ -1,7 +1,6 @@
 import React from "react";
 import MealService from '../app/service/mealService'
 import MealTable from '../view/mealTable'
-
 class Main extends React.Component {
 
     state = {
@@ -36,16 +35,17 @@ class Main extends React.Component {
         return(
         <div className="App">
             <form className="form-inline">
-                <input className="form-control mr-sm-2" type="text" value={this.state.name} onChange={e => this.setState({name : e.target.value})} 
+                <input className="form-control" type="text" value={this.state.name} onChange={e => this.setState({name : e.target.value})} 
                         placeholder="Find a delicious Meal!"/>
-            <button type="button" className="btn btn-warning" onClick={this.buscar}>
-                <i className="pi pi-search"/>Search</button></form>
-            <p>The API Original is from <a href="#">TheMealDB.com</a></p>
+                <button type="button" className="btn btn-warning" onClick={this.buscar}>
+                <i className="fa fa-search"/>
+                </button>
+                <p>The API Original is from <a href="#">TheMealDB.com</a></p>
+                </form>
             <MealTable 
             meals={this.state.meals} >
 
             </MealTable>
-            <footer >© 2021 - Luis Gustavo Santos Taborda</footer>
         </div>
         );
     }
