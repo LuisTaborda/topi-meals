@@ -1,3 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,500;1,700&display=swap');
+*{
+  font-family: 'Roboto', sans-serif;
+}
+
 .App {
   text-align: center;
 }
@@ -38,6 +43,76 @@
 }
 
 img {
-  width : 100px;
-  border-radius: 100px;
+  width : 100%;
+}
+
+body{
+  background-color:#444;
+  background-image: url("https://i.pinimg.com/originals/ff/94/d7/ff94d7d404ecc5dfd2298bb74ae30ce2.jpg");
+
+}
+
+.meal-header{
+  background: white ;
+  margin-top: 10px;
+  width: 300px;
+}
+
+.meal-body{
+  background-color:#000C;
+  margin-top: 10px;
+  padding: 20px;
+  text-align: left;
+}
+
+.meal-body p{
+  font-size: 0.75em;
+  overflow: hidden;
+  max-width: 205ch;
+
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3; /* number of lines to show */
+  -webkit-box-orient: vertical;
+}
+
+.meal-body h3{
+  color: orangered;
+}
+
+.meal-body h5{
+  color:crimson;
+  margin-top: 15px;
+  font-size: 0.8em;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.meal{
+  display: flex;
+  margin-top: 25px;
+}
+
+.App form {
+  width: 300px;
+  margin: auto;
+  margin-top: 25px;
+  margin-bottom: 15px;
+}
+
+.App p{
+  color:#999
+}
+
+.App a{
+  color:ghostwhite;
+}
+
+footer{
+  color: ghostwhite;
+  font-weight: 500;
+  background: #000a;
+  height: auto;
+  width: 100%;
+  padding:5px
 }
