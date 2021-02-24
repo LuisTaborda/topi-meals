@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,500;1,700&display=swap');
+
+*{
+  font-family: 'Roboto', sans-serif;
+  padding: 0;
+}
+
+body{
+  background-color:crimson;
+}
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.meal-header img {
+  width: 200px;
+  height: 200px;
+}
+
+.meal-header{
+  background: #eee;
+}
+
+.meal-body{
+  background-color:#eee;
+  padding: 20px;
+  text-align: left;
+  width: 100%;
+}
+
+.meal-body p{
+  font-size: 0.75em;
+  overflow: hidden;
+  max-width: 205ch;
+
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3; /* number of lines to show */
+  -webkit-box-orient: vertical;
+}
+
+.meal-body h3{
+  color: orangered;
+}
+
+.meal-body h5{
+  color:crimson;
+  margin-top: 15px;
+  font-size: 0.8em;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.meal{
+  display: flex;
+  margin-top: 45px;
+  padding : 0;
+  box-shadow: 0px 10px 30px #282c34;
+
+}
+
+.App form {
+  width: 300px;
+  margin: auto;
+  margin-top: 25px;
+  margin-bottom: 15px;
+}
+
+.App input{
+  border-radius: 5px 0px 0 5px;
+}
+
+.App button{
+  border-radius: 0px 5px 5px 0px;
+}
+
+.form-inline p{
+  margin-top: 10px;
+  color:ghostwhite
+}
+
+.App a{
+  color:orange;
+}
